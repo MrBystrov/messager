@@ -1,0 +1,9 @@
+.app{
+  &__nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+}

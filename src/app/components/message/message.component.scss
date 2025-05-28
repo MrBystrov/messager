@@ -1,0 +1,14 @@
+.message{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  border-radius: 12px;
+  &__text{
+    padding: 0;
+    margin: 0;
+  }
+  &__date{
+    align-self: end;
+  }
+}

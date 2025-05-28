@@ -1,0 +1,12 @@
+<div class="chat">
+  <ul class="chat__messages">
+    @for (message of messages; track message.id) {
+      <app-message class="chat__message" [ngClass]="{'chat__message--me': message.fromMe}" [message]="message"></app-message>
+    }
+    @empty {
+      <p>No messages yet!</p>
+    }
+  </ul>
+  <app-chat-input></app-chat-input>
+
+</div>

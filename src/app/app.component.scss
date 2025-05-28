@@ -1,0 +1,15 @@
+
+.app {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(195, 230, 231);
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}

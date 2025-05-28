@@ -1,13 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Frontend</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <title>Messager</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
+  <script type="module">
+    // Import необходимые функции из SDK
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js';
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js';
+
+    // Конфигурация вашего веб-приложения Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyCeRkasBvjLYOn6FhPVZtfNLHGdUyhfeUs",
+      authDomain: "messages-app-28-05-2025.firebaseapp.com",
+      projectId: "messages-app-28-05-2025",
+      storageBucket: "messages-app-28-05-2025.firebasestorage.app",
+      messagingSenderId: "1090931047916",
+      appId: "1:1090931047916:web:102c30a7d438e9c6e654c9",
+      measurementId: "G-D3P85NW37G",
+    };
+
+    // Инициализация Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Опционально: добавьте другие необходимые SDK
+    // import { getFirestore } from 'firebase/firestore';
+    // const firestore = getFirestore(app);
+  </script>
   <app-root></app-root>
 </body>
 </html>
+
